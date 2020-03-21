@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+}
+
+ul li {
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 20px;
+}
+
+ul {
+	height: 50px;
+	background-color: white;
+	text-align: center;
+}
+
+ul li a {
+	/*color : black;
+	color : rgb(144, 34, 156);
+	color : #f10d43;
+	color : rgba(144, 34, 156, 0.5);*/
+	color : #834ac3;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-decoration: none;
+}
+
+.header {
+	height: 100vh;
+	/*background-image: url('https://bgfons.com/upload/rainbow_texture679.jpg');*/
+	background-image: url('../images/header_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.header__box {
+	flex-direction: row;
+}
+
+.header-img {
+	width: 100%;
+	height: auto;
+}
+
+.header__box h1,
+.header__box p {
+	color: #FFFFFF;
+	font-size: 1.8rem;
+}
