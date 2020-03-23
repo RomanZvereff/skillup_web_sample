@@ -6,9 +6,42 @@
 	<meta name="author" content="John Green">
 	<meta name="keywords" content="portfolio, web, design, developer">
 	<meta name="description" content="This is my personal portfolio and services">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Custom CSS -->
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body id="top-page">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#top-page">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills & Tools</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-me">Contact me</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--
 	<nav>
 		<ul>
 			<li><a href="#top-page">Home</a></li>
@@ -19,10 +52,11 @@
 			<li><a href="#contact-me">Contact me</a></li>
 		</ul>
 	</nav>
+-->
 	<header>
 		<div class="header">
-			<div class="header__box">
-				<h1>John Green</h1>
+			<div class="header__box fadeInDown">
+				<h1 class="header-header">John Green</h1>
 				<!--<h2>John Green</h2>
 				<h3>John Green</h3>
 				<h4>John Green</h4>
@@ -31,7 +65,7 @@
 				<p>Designer, Front-end Developer & Mentor.
 					I design and code beautifully simple things, and I love what I do.</p>
 			</div>
-			<div class="header__box">
+			<div class="header__box bounceInRight">
 				<img class="header-img" src="./images/illustration.png">
 				<!--<img src="https://mattfarley.ca/img/m-avatar.svg" alt="pic from internet avatar">-->
 			</div>
@@ -39,87 +73,139 @@
 	</header>
 
 	<section id="about-me">
-		<div>
-			<h2>About me</h2>
-			<p>Hi, I’m John. Nice to meet you.
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-3 col-md-6">
+					<img src="https://img.icons8.com/plasticine/2x/info.png">
+				</div>
+				<div class="col-12 col-sm-9 col-md-6 my-auto">
+					<h2>About me</h2>
+					<p>Hi, I’m John. Nice to meet you.
 Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+				</div>
+			</div>
+			
 		</div>
 	</section>
 
 	<section id="projects">
-		<h2>Projects</h2>
-		<img src="./images/35605953.jpg">
-		<img src="./images/124022040.jpg">
-		<img src="./images/886051797.jpg">
-		<img src="./images/1658815291.jpg">
-		<img src="./images/1886844506.jpg">
-		<img src="./images/2019597669.png">
+		<div class="container">
+			<h2>Projects</h2>
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4">
+					<img class="proj-img" src="./images/35605953.jpg">
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<img  class="proj-img" src="./images/124022040.jpg">
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<img  class="proj-img" src="./images/886051797.jpg">
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<img  class="proj-img" src="./images/1658815291.jpg">
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<img  class="proj-img" src="./images/1886844506.jpg">
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<img  class="proj-img" src="./images/2019597669.png">
+				</div>
+			</div>
+		</div>		
 	</section>
 
 	<section id="skills">
-		<div>
+		<div class="container">
 			<h2>Skills & Tools</h2>
-		</div>
-		<div>
-			<ol>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>PHP</li>
-				<li>Wordpress</li>
-			</ol>
-		</div>
-		<div>
-			<ul>
-				<li>Sublime Text3</li>
-				<li>Github</li>
-				<li>Bootstrap</li>
-				<li>Figma</li>
-				<li>Codepen</li>
-			</ul>
+			<div class="row skill-list">
+				<div class="col-12 col-sm-6 col-md-6 ">
+					<ol>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>PHP</li>
+						<li>Wordpress</li>
+					</ol>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6">
+					<ul>
+						<li>Sublime Text3</li>
+						<li>Github</li>
+						<li>Bootstrap</li>
+						<li>Figma</li>
+						<li>Codepen</li>
+					</ul>
+				</div>				
+			</div>
 		</div>
 	</section>
 
 	<section id="services">
-		<h2>Services</h2>
-		<table border="1">
-			<thead>
-				<tr>
-					<th>Product</th>
-					<th>Tools</th>
-					<th>Period</th>
-					<th>Support</th>
-					<th>Price</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Web site lite</td>
-					<td>HTML, CSS</td>
-					<td>Week</td>
-					<td>+</td>
-					<td>15$</td>
-				</tr>
-				<tr>
-					<td>Web site dev</td>
-					<td>HTML, CSS, JavaScript and Frameworks</td>
-					<td>Month</td>
-					<td>+</td>
-					<td>35$</td>
-				</tr>
-				<tr>
-					<td>Web site PRO</td>
-					<td>Web site dev + PHP + Wordpress </td>
-					<td>More then month</td>
-					<td>+</td>
-					<td>55$</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="container">
+			<h2>Services</h2>
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Product</th>
+							<th>Tools</th>
+							<th>Period</th>
+							<th>Support</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Web site lite</td>
+							<td>HTML, CSS</td>
+							<td>Week</td>
+							<td>+</td>
+							<td>15$</td>
+						</tr>
+						<tr>
+							<td>Web site dev</td>
+							<td>HTML,CSS,JavaScript,Frameworks</td>
+							<td>Month</td>
+							<td>+</td>
+							<td>35$</td>
+						</tr>
+						<tr>
+							<td>Web site PRO</td>
+							<td>Web site dev + PHP + Wordpress </td>
+							<td>More then month</td>
+							<td>+</td>
+							<td>55$</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		
 	</section>
 
 	<section id="contact-me">
-		<h2>Contact me</h2>
+		<div class="container">
+			<h2>Contact me</h2> 
+			<div class="row">
+				<form>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Name </label>
+				    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Email </label>
+				    <input type="text" class="form-control" id="exampleInputPassword1">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Message </label>
+				    <input type="text" class="form-control" id="exampleInputPassword1">
+				  </div>
+				  <button type="submit" class="btn btn-success">Submit</button>
+				</form>
+			</div> 
+		</div>
+<!--
 		<form>
 			<label>Name </label>
 			<input type="text" placeholder="enter your name"><br><br>
@@ -127,20 +213,23 @@ Since beginning my journey as a freelance designer nearly 8 years ago, I've done
 			<input type="email" placeholder="enter your email"><br><br>
 			<label>Message </label>
 			<input type="text" placeholder="enter your message"><br><br>
-			<!--<input type="button" value="Submit">-->
+			<input type="button" value="Submit">
 			<button>Submit</button>
 		</form>
+	-->
 	</section>
 
-	<footer>
-		<div>
-			<span>© copyright 2020</span>
-		</div>
-		<div>
-			<a href="https://uk-ua.facebook.com/" target="_blank"><img src="./images/facebook.png"></a>
-			<a href="https://twitter.com/?lang=ru" target="_blank"><img src="./images/twitter.png"></a>
-			<a href="https://www.youtube.com/?gl=UA&hl=ru" target="_blank"><img src="./images/youtube.png"></a>
+	<footer class="footer">
+		<div class="container footer-container d-flex align-items-center">
+				<span>© copyright 2020</span>
+				<a href="https://uk-ua.facebook.com/" target="_blank"><img class="social" src="./images/facebook.png"></a>
+				<a href="https://twitter.com/?lang=ru" target="_blank"><img class="social" src="./images/twitter.png"></a>
+				<a href="https://www.youtube.com/?gl=UA&hl=ru" target="_blank"><img class="social" src="./images/youtube.png"></a>
 		</div>
 	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
